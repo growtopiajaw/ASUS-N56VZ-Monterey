@@ -55,7 +55,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **Touch Pad** | ✅ |
 | **USB** | ✅ |
 | **VGA Out** | Untested |
-| **Web Camera** | ❌ |
+| **Webcam** | ❌ |
 | **Wi-Fi** | N/A |
 * N/A: Not Available / Unavailable
 * ✅: Working
