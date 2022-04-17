@@ -46,7 +46,42 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **Web Camera** | ❌ |
 | **Wi-Fi** | N/A |
 
-HD4000 patch for Monterey: https://github.com/chris1111/Patch-HD4000-Monterey
+### Patches
+- HD4000 patch for Monterey: https://github.com/chris1111/Patch-HD4000-Monterey
+
+### EFI Hierarchy
+```
+├── EFI
+│   ├── OC
+│   │   ├── ACPI
+│   │   │   ├── DSDT.aml - Built from scratch based on my specific N56VZ's ACPI table
+│   │   │   ├── SSDT-1.aml - Graphics patch for NVIDIA GeForce GT 650M 2GB
+│   │   │   ├── SSDT-EC.aml - Based on dortania's OpenCore guide recommendations
+│   │   │   ├── SSDT-IMEI.aml - Based on dortania's OpenCore guide recommendations
+│   │   │   ├── SSDT-PNLF.aml - Based on dortania's OpenCore guide recommendations
+│   │   │   ├── SSDT-SBUS-MCHC.aml - Based on dortania's OpenCore guide recommendations
+│   │   │   ├── SSDT-XOSI.aml - Based on dortania's OpenCore guide recommendations
+│   │   │   └── SSDT.aml - Generated from ssdtPRGen.sh
+│   │   ├── Kexts
+│   │   │   ├── AppleALC.kext - Audio Codec patch
+│   │   │   ├── AsusSMC.kext - ASUS Keyboard Backlight, FN Keys & Track Pad patch
+│   │   │   ├── AtherosE2200Ethernet.kext - Qualcomm Atheros AR8161 Gigabit Ethernet patch
+│   │   │   ├── Intel7Series-Injector.kext - Intel HM76 patch (might not be necessary)
+│   │   │   ├── Lilu.kext - Required for most kexts to function
+│   │   │   ├── SMCBatteryManager.kext - Battery status kext
+│   │   │   ├── SMCProcessor.kext - Processor info kext
+│   │   │   ├── USBToolBox.kext - Required for UTBMap.kext to function
+│   │   │   ├── UTBMap.kext - USB Mapping
+│   │   │   ├── VirtualSMC.kext - SMC patch
+│   │   │   ├── VoodooPS2Controller.kext - Keyboard & Track Pad patch
+│   │   │   │   └── Contents
+│   │   │   │       └── PlugIns
+│   │   │   │           ├── VoodooInput.kext
+│   │   │   │           ├── VoodooPS2Keyboard.kext
+│   │   │   │           ├── VoodooPS2Mouse.kext
+│   │   │   │           └── VoodooPS2Trackpad.kext
+│   │   │   └── WhateverGreen.kext - Graphics patch
+```
 
 ### Credits
 - chris1111 for HD4000 patch and base for this EFI
