@@ -48,6 +48,10 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **VGA Out** | Untested |
 | **Web Camera** | ❌ |
 | **Wi-Fi** | N/A |
+* N/A: Not Available / Unavailable
+* ✅: Working
+* ❌: Not Working
+* Untested: Not tested yet, might or might not be working.
 
 ### Patches
 - HD4000 patch for Monterey: https://github.com/chris1111/Patch-HD4000-Monterey
