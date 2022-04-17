@@ -1,6 +1,6 @@
 # ASUS N56VZ Monterey
 
-This EFI folder is initially based on [HP-Probook-EliteBook-Package-Creator-OC](https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC) with N56VZ specific fixes being added over time.
+This EFI folder is initially based off of [HP-Probook-EliteBook-Package-Creator-OC](https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC) with N56VZ specific fixes being added over time.
 
 NOTE: No additional support will be provided and you are on your own. This EFI is provided as-is. Please backup your EFI folder before doing anything.
 
