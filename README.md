@@ -4,6 +4,14 @@ This EFI folder is initially based off of [HP-Probook-EliteBook-Package-Creator-
 
 NOTE: No additional support will be provided and you are on your own. This EFI is provided as-is. Please backup your EFI folder before doing anything.
 
+## Table of Contents
+- [Laptop Specifications](#laptop-specifications)
+- [Whats working?](#whats-working)
+- [Patches and Tools](#patches-and-tools)
+- [EFI Hierarchy and Explanation](#efi-hierarchy-and-explanation)
+- [Credits](#credits)
+
+
 ### Laptop Specifications
 - CPU: Intel® Core™ i5-3210M
 - iGPU: Intel® HD Graphics 4000
@@ -18,7 +26,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 - Chipset: Intel HM76
 
 
-### What works
+### Whats working
 | Feature | Status |
 | ------ | ------ |
 | **2.5mm Jack** | Untested |
@@ -53,10 +61,16 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 * ❌: Not Working
 * Untested: Not tested yet, might or might not be working.
 
-### Patches
-- HD4000 patch for Monterey: https://github.com/chris1111/Patch-HD4000-Monterey
 
-### EFI Hierarchy
+### Patches and Tools
+   * HD4000 patch for Monterey: https://github.com/chris1111/Patch-HD4000-Monterey
+   * MaciASL: https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/
+      * (DSDT.aml disassembly and patches, use RehabMan-MaciASL-2018-0507.zip)
+   * USBToolBox: https://github.com/USBToolBox/tool
+      * (USB Mapping)
+
+
+### EFI Hierarchy and Explanation
 ```
 ├── EFI
 │   ├── OC
@@ -89,6 +103,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 │   │   │   │           └── VoodooPS2Trackpad.kext
 │   │   │   └── WhateverGreen.kext - Graphics patch
 ```
+
 
 ### Credits
 - chris1111 for HD4000 patch and base for this EFI
