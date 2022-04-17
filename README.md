@@ -9,7 +9,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 - [Whats working?](#whats-working)
 - [Patches and Tools](#patches-and-tools)
 - [EFI Hierarchy and Explanation](#efi-hierarchy-and-explanation)
-- [How did I build this EFI scratch?](#how-did-i-build-this-efi-from-scratch)
+- [How did I build this EFI from scratch?](#how-did-i-build-this-efi-from-scratch)
 - [Credits](#credits)
 
 
@@ -113,7 +113,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 ```
 
 
-### How did I build this EFI scratch
+### How did I build this EFI from scratch
 1. Dump DSDT table on Windows using AcpiDump with the command `acpidump.exe -b -n DSDT -z`
 2. Open up dumped DSDT.aml on macOS using MaciASL and apply the following patches
    * _RehabMan Laptop
