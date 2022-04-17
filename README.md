@@ -5,27 +5,17 @@ This EFI folder is initially based off of [HP-Probook-EliteBook-Package-Creator-
 NOTE: No additional support will be provided and you are on your own. This EFI is provided as-is. Please backup your EFI folder before doing anything.
 
 ### Laptop Specifications
-CPU: Intel® Core™ i5-3210M
-
-iGPU: Intel® HD Graphics 4000
-
-dGPU: NVIDIA GeForce GT 650M 2GB
-
-RAM: 8GB 1333MHz DDR3
-
-Audio Codec: Realtek ALC663
-
-Ethernet: Qualcomm Atheros AR8161 Gigabit Ethernet
-
-Wi-Fi Card: N/A
-
-Bluetooth Card: N/A
-
-BIOS revision: Version 217
-
-Screen resolution: 1366x768
-
-Chipset: Intel HM76
+- CPU: Intel® Core™ i5-3210M
+- iGPU: Intel® HD Graphics 4000
+- dGPU: NVIDIA GeForce GT 650M 2GB
+- RAM: 8GB 1333MHz DDR3
+- Audio Codec: Realtek ALC663
+- Ethernet: Qualcomm Atheros AR8161 Gigabit Ethernet
+- Wi-Fi Card: N/A
+- Bluetooth Card: N/A
+- BIOS revision: Version 217
+- Screen resolution: 1366x768
+- Chipset: Intel HM76
 
 
 ### What works
@@ -58,6 +48,6 @@ Chipset: Intel HM76
 
 HD4000 patch for Monterey: https://github.com/chris1111/Patch-HD4000-Monterey
 
-###Credits
-chris1111 for HD4000 patch and base for this EFI
-signer for the base for this "What's Working" list
+### Credits
+- chris1111 for HD4000 patch and base for this EFI
+- signer for the base for this "What's Working" list
