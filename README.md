@@ -9,6 +9,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 - [Whats working?](#whats-working)
 - [Patches and Tools](#patches-and-tools)
 - [EFI Hierarchy and Explanation](#efi-hierarchy-and-explanation)
+- [How did I build this EFI scratch?](#how-did-i-build-this-efi-from-scratch)
 - [Credits](#credits)
 
 
@@ -68,6 +69,13 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
       * (DSDT.aml disassembly and patches, use RehabMan-MaciASL-2018-0507.zip)
    * USBToolBox: https://github.com/USBToolBox/tool
       * (USB Mapping)
+   * AcpiDump: https://www.acpica.org/downloads/binary-tools
+      * (ACPI table // DSDT extractor / dumper)
+   * AsusSMC: https://github.com/hieplpvip/AsusSMC/wiki/Installation-Instruction
+      * (ASUS Keyboard Backlight, FN Keys & Track Pad patch step by step guide)
+   * Opencore .aml: https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html
+   * chris1111 HP ProBook / EliteBook EFI: https://github.com/chris1111/HP-Probook-EliteBook-Package-Creator-OC
+   * OpenCore Drivers: https://github.com/acidanthera/OcBinaryData
 
 
 ### EFI Hierarchy and Explanation
@@ -104,6 +112,30 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 │   │   │   └── WhateverGreen.kext - Graphics patch
 ```
 
+
+### How did I build this EFI scratch
+1. Dump DSDT table on Windows using AcpiDump with the command `acpidump.exe -b -n DSDT -z`
+2. Open up dumped DSDT.aml on macOS using MaciASL and apply the following patches
+   * _RehabMan Laptop
+      * [bat] ASUS N55SL/VivoBook
+      * [igpu] Brightness Fix (HD3000/HD4000)
+      * [igpu] HD4000 Low Resolution
+      * [sys] IRQ Fix
+      * [sys] OS Check Fix (Windows 8)
+   * ASUS
+      * Generic Series 7
+   * AsusSMC
+      * [als] Fake ALS
+      * [fn] F2 Key
+      * [kbl] Ivy Bridge
+   * Note: There might be more or accidentally left out patches that I can't recall when patching my DSDT
+4. Use chris1111's config.plist as the base
+5. Add recommended .aml files from dortania's OpenCore guide
+6. Add EHC1, EHC2, EUSB, USBE, XHCI, XHC1, EC0, H_EC, ECDV, `_OSI` renames using Hackintool to config.plist (Some might not be required, left out or outright wrong to add but what's important to me is that it works)
+7. Disable SIP in config.plist, edit csr-active-config with the value `7w8AAA==` (For HD4000 patch installation)
+8. Add kexts and .aml files to config.plist
+9. Add `-v keepsyms=1 debug=0x100 alcid=28 -no_compat_check` to boot-args in config.plist (-no_compat_check might not be required)
+10. Add some additional file system drivers to config.plist and EFI/OC/Drivers
 
 ### Credits
 - chris1111 for HD4000 patch and base for this EFI
