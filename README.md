@@ -23,6 +23,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | ------ | ------ |
 | **2.5mm Jack** | Untested |
 | **3.5mm Audio Jack** | ✅ |
+| **AirDrop** | ❌ |
 | **ASUS Instant Key** | Untested |
 | **Audio** | ✅ |
 | **Battery Status** | ✅ |
@@ -30,6 +31,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **Brightness** | ❌ |
 | **CD-ROM** | ✅ |
 | **Charging** | ✅ |
+| **Continuity** | N/A |
 | **dGPU** | ❌ |
 | **Ethernet** | ✅ |
 | **Graphics acceleration** | ✅ |
@@ -39,6 +41,7 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **Microphone** | ✅ |
 | **Microphone Jack** | Untested |
 | **SD Card Slot** | Untested |
+| **Sidecar** | N/A |
 | **Sleep/Wake** | ✅ |
 | **Touch Pad** | ✅ |
 | **USB** | ✅ |
