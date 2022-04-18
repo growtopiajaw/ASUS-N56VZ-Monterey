@@ -55,12 +55,13 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **Touch Pad** | ✅ |
 | **USB** | ✅ |
 | **VGA Out** | Untested |
-| **Webcam** | ❌ |
+| **Webcam** | Partially Working |
 | **Wi-Fi** | N/A |
 * N/A: Not Available / Unavailable
 * ✅: Working
 * ❌: Not Working
 * Untested: Not tested yet, might or might not be working.
+* Partially Working: Webcam does work in some apps like Microsoft Teams but doesn't in built in apps like Photo Booth and FaceTime.
 
 
 ### Patches and Tools
