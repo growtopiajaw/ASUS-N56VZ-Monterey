@@ -44,12 +44,12 @@ NOTE: No additional support will be provided and you are on your own. This EFI i
 | **dGPU** | ❌ |
 | **Ethernet** | ✅ |
 | **Graphics acceleration** | ✅ |
-| **HDMI** | Untested |
+| **HDMI** | ❌ |
 | **iGPU** | ✅ |
 | **Keyboard function keys & backlight** | ✅ |
 | **Microphone** | ✅ |
 | **Microphone Jack** | Untested |
-| **SD Card Slot** | Untested |
+| **SD Card Slot** | ✅ |
 | **Sidecar** | N/A |
 | **Sleep/Wake** | ✅ |
 | **Touch Pad** | ✅ |
